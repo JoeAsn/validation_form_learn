@@ -1,0 +1,15 @@
+{
+  "name": "apivalidation",
+  "version": "1.0.0",
+  "description": "a practice api for post request validation of a form",
+  "license": "ISC",
+  "author": "Yohannes Asnake",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
