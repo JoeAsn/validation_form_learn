@@ -9,7 +9,9 @@ export function validator(data) {
     age: z.number().int().positive().min(18).max(100),
     isStudent: z.boolean(),
     password: z.string().min(8).max(16),
-  });
+    confirmPassword : z.string().min(8).max(26)
+  }).refine(data=> data.password === data.confirmPassword , 
+  )
   const valid = userSchema.safeParse(data);
   if (!valid.success) {
     console.log(valid.error);
